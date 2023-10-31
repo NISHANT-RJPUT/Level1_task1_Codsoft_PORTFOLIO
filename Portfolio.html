@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.N_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 50%;
+    height: auto;
+    max-width: 200px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#skills ul {
+    list-style: none;
+}
+
+#projects .project {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add more CSS styles as needed */
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    /* Add more media queries for other sections */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Nishant Rajput</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+
+        <img src="nishant_img1.jpg" alt="Nishant" class="N_img" >
+
+        <p>I'm Nishant Rajput, a passionate third-year Computer Science Engineering (CSE) student at Amity University Madhya Pradesh. With a strong foundation in CSE and a deep curiosity for emerging technologies, I am dedicated to making a positive impact in the tech world.
+<br>
+           <b> Skills: </b>
+            
+            Proficient in programming languages such as Python, Java, and C++
+            Web development skills in HTML, CSS, and JavaScript
+            Familiarity with database management using SQL
+            Problem-solving and algorithmic thinking
+            Strong analytical and critical thinking abilities
+            <br>
+           <b> Experience: </b>
+            During my academic journey, I have had the opportunity to work on several exciting projects that have honed my skills and allowed me to apply my knowledge to real-world challenges. These include:
+            
+            E-commerce Website: I led a team in developing a fully functional e-commerce website, integrating payment gateways and creating a user-friendly shopping experience.
+            
+            Machine Learning Research: I've been part of a research project in the CSE department, focusing on implementing machine learning algorithms to analyze complex datasets and make predictions.
+            
+            Hackathons and Competitions: I actively participate in coding competitions and hackathons, consistently achieving high rankings and showcasing my problem-solving capabilities.
+            <br>
+            My goal is to continue growing as a computer scientist and engineer while contributing to innovative projects that have a positive impact on society. I am eager to take on new challenges and learn from every experience.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+           <li>C++ language</li>
+            <li>Python</li>
+            <li>Ludo</li>
+            <li>Sudako</li>
+            <li>Snake ladder program</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="suduko.png" alt="Project 1">
+            <h3>suduko</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="project">
+            <img src="snake.png" alt="Project 2">
+            <h3>Snake ladder program</h3>
+            <p>Description of Project 2.</p>
+        </div>
+        <!-- Add more projects here -->
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="Nishant_Resume.pdf" target="_blank">Download PDF</a></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: nishant1357singh@gmail.com</p>
+        <p>Phone: +91-8319451940</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Nishant</p>
+        <p>Instagram link: <a href="https://instagram.com/nishant_s_patel?igshid=MzRlODBiNWFlZA==">Instagram</a> </p>
+    </footer>
+
+    <script>
+       
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: 'smooth',
+            });
+        }
+    });
+});
+
+    </script>
+
+</body>
+</html>
